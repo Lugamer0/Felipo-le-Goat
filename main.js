@@ -25,7 +25,7 @@ const animationName2 = 'rotateItem2';
 for (let i = 0; i < itemCount; i++) {
   const angle = (360 / itemCount) * i;
   const img = document.createElement('img');
-  img.src = './../img/Felipo2.png'; // Remplace par le chemin de ton image
+  img.src = './Felipo2.png'; // Remplace par le chemin de ton image
   img.className = `image-item felipo${i}`;
   img.style.transform = `rotate(${angle}deg) translate(${radius}px) rotate(-${angle}deg)`;
 
@@ -52,7 +52,7 @@ for (let i = 0; i < itemCount; i++) {
 for (let i = 0; i < itemCount; i++) {
   const angle = (360 / itemCount) * i;
   const img = document.createElement('img');
-  img.src = './../img/Felipo2.png'; // Remplace par le chemin de ton image
+  img.src = './Felipo2.png'; // Remplace par le chemin de ton image
   img.className = `image-item felipo${i}`;
   img.style.transform = `rotate(${angle}deg) translate(${radiusDeux}px) rotate(-${angle}deg)`;
 
