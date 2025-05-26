@@ -53,7 +53,7 @@ body::after {
 
 .center {
 	position: absolute;
-	background-image: url(./../img/Felipo2.png);
+	background-image: url(./Felipo2.png);
 	background-size: cover;
 	border-radius: 100%;
 	width: 300px;
