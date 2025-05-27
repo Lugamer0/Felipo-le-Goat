@@ -27,7 +27,7 @@ for (let i = 0; i < itemCount; i++) {
   const img = document.createElement('img');
   img.src = './Felipo2.png'; // Remplace par le chemin de ton image
   img.className = `image-item felipo${i}`;
-  img.style.transform = `rotate(${angle}deg) translate(${radius}px) rotate(-${angle}deg)`;
+  img.style.transform = `rotate(${angle}deg) translate(${radius}px)`;
 
   const anim = `${animationName}-${i}`;
   img.style.animation = `${anim} 20s linear infinite`;
@@ -37,10 +37,10 @@ for (let i = 0; i < itemCount; i++) {
   const keyframes = `
     @keyframes ${anim} {
       0% {
-        transform: rotate(${angle}deg) translate(${radius}px) rotate(-${angle}deg);
+        transform: rotate(${angle}deg) translate(${radius}px);
       }
       100% {
-        transform: rotate(${angle + 360}deg) translate(${radius}px) rotate(-${angle + 360}deg);
+        transform: rotate(${angle - 360}deg) translate(${radius}px);
       }
     }
   `;
@@ -54,7 +54,7 @@ for (let i = 0; i < itemCount; i++) {
   const img = document.createElement('img');
   img.src = './Felipo2.png'; // Remplace par le chemin de ton image
   img.className = `image-item felipo${i}`;
-  img.style.transform = `rotate(${angle}deg) translate(${radiusDeux}px) rotate(-${angle}deg)`;
+  img.style.transform = `rotate(${angle}deg) translate(${radiusDeux}px)`;
 
   const anim = `${animationName2}-${i}`;
   img.style.animation = `${anim} 20s linear infinite`;
@@ -64,10 +64,10 @@ for (let i = 0; i < itemCount; i++) {
   const keyframes = `
     @keyframes ${anim} {
       0% {
-        transform: rotate(${angle}deg) translate(${radiusDeux}px) rotate(-${angle}deg);
+        transform: rotate(${angle}deg) translate(${radiusDeux}px);
       }
       100% {
-        transform: rotate(${angle + 360}deg) translate(${radiusDeux}px) rotate(-${angle + 360}deg);
+        transform: rotate(${angle + 360}deg) translate(${radiusDeux}px);
       }
     }
   `;
